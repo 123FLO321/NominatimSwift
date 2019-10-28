@@ -18,8 +18,8 @@ public struct ReverseParams: Hashable {
         case node = "N", way = "W", relation = "R"
     }
 
-    internal init(query: ReverseParams.Query, addressdetails: Bool?, extratags: Bool?,
-                  namedetails: Bool?, acceptLanguage: String?, zoom: UInt8?) {
+    internal init(query: ReverseParams.Query, addressdetails: Bool?=nil, extratags: Bool?=nil,
+                  namedetails: Bool?=nil, acceptLanguage: String?=nil, zoom: UInt8?=nil) {
         self.query = query
         self.addressdetails = addressdetails
         self.extratags = extratags
