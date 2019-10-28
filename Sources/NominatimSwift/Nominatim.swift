@@ -55,6 +55,22 @@ public class Nominatim {
         }
     }
 
+    public func reverse(params: ReverseParams) throws -> ReverseResult? {
+        var result: ReverseResult?
+        var error: ReverseError?
+        let semaphore = DispatchSemaphore(value: 0)
+        reverse(params: params) { (resultAsync, errorAsync) in
+            result = resultAsync
+            error = errorAsync
+            semaphore.signal()
+        }
+        semaphore.wait()
+        if let error = error {
+            throw error
+        }
+        return result
+    }
+
     private func request(path: String, completion: @escaping (Data?, Error?) -> Void) {
         let url = URL(string: path, relativeTo: nominatimURL)!
         let task = URLSession.shared.dataTask(with: url) { (data, _, error) in

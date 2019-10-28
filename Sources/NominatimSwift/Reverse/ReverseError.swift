@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum ReverseError {
+public enum ReverseError: Error {
     case requestError(error: Error?)
     case parsingError(error: Error?)
 }
