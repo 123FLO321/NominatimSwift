@@ -19,7 +19,7 @@ public struct ReverseParams: Hashable {
     }
 
     public init(query: ReverseParams.Query, addressdetails: Bool?=nil, extratags: Bool?=nil,
-                  namedetails: Bool?=nil, acceptLanguage: String?=nil, zoom: UInt8?=nil) {
+                namedetails: Bool?=nil, acceptLanguage: String?=nil, zoom: UInt8?=nil) {
         self.query = query
         self.addressdetails = addressdetails
         self.extratags = extratags
