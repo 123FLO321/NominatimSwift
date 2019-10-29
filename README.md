@@ -1,5 +1,5 @@
 ![Swift 5.1](https://img.shields.io/badge/Swift-5.1-orange.svg?style=flat)
-![Platforms: Linux, macOS, iOS](https://img.shields.io/badge/Platforms-Linux20%7C%20macOS%20%7C%20iOS-lightgray.svg?style=flat)
+![Platforms: Linux, macOS, iOS](https://img.shields.io/badge/Platforms-Linux%20%7C%20macOS%20%7C%20iOS-lightgray.svg?style=flat)
 [![Release](https://img.shields.io/github/v/release/123FLO321/NominatimSwift.svg?style=flat)](https://github.com/123FLO321/NominatimSwift/releases)
 [![Build Status](https://travis-ci.com/123FLO321/NominatimSwift.svg?branch=master)](https://travis-ci.com/123FLO321/NominatimSwift)
 
